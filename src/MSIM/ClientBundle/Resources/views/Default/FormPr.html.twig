@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <html>
+        <body BgColor="#64BCE5">
+                   
+
+           
+        <center>
+            <h1> Bonjour dans mon espace</h1>
+                        <h3> Veuillez remplir le formulaire suivant :</h3>
+
+    {{ form(f) }}
+    <br>
+    <a href="{{ path('consult') }}">Lister les taches</a>
+    </center>
+    </body>
+</html>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <body BgColor="#9CD3ED">
+         <center>
+<h1 style="color:#AC2F2F;text-align: center; text-decoration: underline">Listes des taches 2015</h1>
+    <table border="1" style="border-collapse: collapse"><tr  bgcolor="#20769D"><td style="width: 40px;text-align: center"> identifiant</td><td style="width: 100px;text-align: center">Nom</td> <td style="width: 100px;text-align: center">Adresse</td></tr>
+{% for p in Chose %}
+    <tr><td style="width: 40px;text-align: center">{{ p.id}}</td>
+         <td style="width: 100px;text-align: center">{{ p.chose }}</td>
+        <td style="width: 100px;text-align: center">{{ p.description}}</td>
+    </tr>
+    {% endfor %}
+
+
+</table>
+    <a href="{{ path('affiche') }}">Retour</a></center>
+    </body>
+
+{% endblock %}

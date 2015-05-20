@@ -1,0 +1,20 @@
+MSIM\ClientBundle\Entity\Chose:
+    type: entity
+    table: null
+    repositoryClass: MSIM\ClientBundle\Entity\ChoseRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        chose:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        date:
+            type: datetime
+    lifecycleCallbacks: {  }
